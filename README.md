@@ -8,5 +8,3 @@ Additional courses:
 
 link
  - my-learning.center
-
- - enrolment key: gtOP98%?
