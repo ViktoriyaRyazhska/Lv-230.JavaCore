@@ -41,7 +41,7 @@ public class Person {
 
 	@Override
 	public String toString() {
-		return "Person name=" + name + ", birthYear=" + birthYear ;
+		return "Person name=" + name + ", birthYear=" + birthYear;
 	}
 
 	public static Integer age(Person person) {
@@ -65,12 +65,12 @@ public class Person {
 		System.out.println();
 	}
 
-//	public void output(Person person){
-//		System.out.println(person);
-//	}
-	
+	// public void output(Person person){
+	// System.out.println(person);
+	// }
+
 	public void changeName(String name) {
-		this.name = name;
+		setName(name);
 	}
 
 }
