@@ -18,7 +18,7 @@ public class Main {
         System.out.println(volodymyr.age());
         System.out.println(andrii.age());
 
-        System.out.println(victoria.output());
-        System.out.println(diana.output());
+        victoria.output();
+        diana.output();
     }
 }

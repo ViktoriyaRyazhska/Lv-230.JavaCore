@@ -59,8 +59,8 @@ public class Person {
         setBirthYear(birthYear);
     }
 
-    public String output() {
-        return toString();
+    public void output() {
+        System.out.println(toString());
     }
 
     public void changeName(String name) {
