@@ -1,5 +1,8 @@
 package hom2;
 
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+
 public class Person {
 
 	private String name;
@@ -15,7 +18,8 @@ public class Person {
 	}
 
 	public void age() {
-		System.out.println("Age: " + (2017 - birthYear));
+		Calendar calendar = new GregorianCalendar();
+		System.out.println("Age: " + (calendar.get(calendar.YEAR) - birthYear));
 
 	}
 
