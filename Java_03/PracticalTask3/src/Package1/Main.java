@@ -78,6 +78,9 @@ public class Main {
 		case 7:
 			System.out.println("Воскресенье, Неділя, Sunday");
 			break;
+		default:
+			System.out.println("Такого дня не існує");
+			
 		}
 	}
 
@@ -100,6 +103,8 @@ public class Main {
 			cont = Continent.Africa;
 			System.out.println(cont);
 			break;
+		default:
+			System.out.println("Немає такого міста в переліку");			
 		}
 
 	}
