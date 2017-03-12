@@ -1,4 +1,3 @@
-package dog;
 import java.util.ArrayList;
 
 public class Dog {
@@ -38,7 +37,4 @@ public class Dog {
     public String toString() {
         return "Name of dog: "+name+", age is: "+age+", breed is: "+breedOfDogs;
     }
-
-
-
 }
