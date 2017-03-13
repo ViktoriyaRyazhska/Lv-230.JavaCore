@@ -6,6 +6,10 @@ public class Dog {
 	private Breed breed;
 	private int age;
 
+	Dog() {
+
+	}
+
 	public Dog(String name, Breed breed, int age) {
 		this.name = name;
 		this.breed = breed;
@@ -21,11 +25,11 @@ public class Dog {
 
 	}
 
-	public void compareAge(Dog dog, Dog dog2) {
+	public String compareAge(Dog dog, Dog dog2) {
 		if (dog.getAge() > dog2.getAge()) {
-			System.out.println("Oldest dog name: " + dog.getName() + "; Kind: " + dog.getBreed());
+			return "Name: " + dog.getName() + "; Kind: " + dog.getBreed();
 		} else {
-			System.out.println("Oldest dog name: " + dog2.getName() + "; Kind: " + dog2.getBreed());
+			return "Name: " + dog2.getName() + "; Kind: " + dog2.getBreed();
 
 		}
 	}
@@ -39,6 +43,9 @@ public class Dog {
 	}
 
 	public void setAge(int age) {
+		if (age <= 0) {
+			System.out.println("Error, age can not be negative");
+		}
 		this.age = age;
 	}
 
