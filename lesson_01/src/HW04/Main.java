@@ -111,7 +111,7 @@ public class Main {
 		
 	}
 	
-	private static Dog compareAge(Dog dog1, Dog dog2) {
+	public static Dog compareAge(Dog dog1, Dog dog2) {
 		if(dog1.getAge() >= dog2.getAge()){
 			return dog1;
 		}else{
@@ -119,7 +119,7 @@ public class Main {
 		}
 	}
 
-	private static void compareNames(Dog dog1, Dog dog2) {
+	public static void compareNames(Dog dog1, Dog dog2) {
 		if(dog1.getName().equals(dog2.getName())){
 			System.out.println("There are dogs with same name: \n"+dog1+"\n"+dog2);
 		}else{
@@ -140,7 +140,7 @@ public class Main {
 		}
 	}
 	
-	private static int findLessNumber(int int1, int int2){
+	public static int findLessNumber(int int1, int int2){
 		if(int1 <= int2){
 			return int1;
 		}else{
