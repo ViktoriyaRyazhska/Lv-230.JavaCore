@@ -1,6 +1,0 @@
-package hom3;
-
-public enum Breed {
-	GERMAN_SHEPHERD, LABRADOR_RETRIEVER, GOLDEN_RETRIEVER, BULLDOG;
-
-}
