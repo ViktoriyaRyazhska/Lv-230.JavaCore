@@ -25,12 +25,11 @@ public class Dog {
 
 	}
 
-	public String compareAge(Dog dog, Dog dog2) {
+	public Dog compareAge(Dog dog, Dog dog2) {
 		if (dog.getAge() > dog2.getAge()) {
-			return "Name: " + dog.getName() + "; Kind: " + dog.getBreed();
+			return dog;
 		} else {
-			return "Name: " + dog2.getName() + "; Kind: " + dog2.getBreed();
-
+			return dog2;
 		}
 	}
 
@@ -72,6 +71,11 @@ public class Dog {
 		} else if (!name.equals(other.name))
 			return false;
 		return true;
+	}
+
+	@Override
+	public String toString() {
+		return "Dog [name=" + name + ", breed=" + breed + "]";
 	}
 
 }

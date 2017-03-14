@@ -38,8 +38,8 @@ public class Main {
 				}
 			}
 		}
-		for (int i = 0; i < employees.length; i++) {
-			System.out.println(employees[i]);
+		for (Employee i : employees) {
+			System.out.println(employees);
 		}
 
 	}
