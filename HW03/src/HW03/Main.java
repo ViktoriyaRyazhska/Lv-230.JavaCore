@@ -1,4 +1,4 @@
-package soft;
+package HW03;
 
 public class Main {
 

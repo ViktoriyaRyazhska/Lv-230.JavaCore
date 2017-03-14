@@ -1,4 +1,4 @@
-package soft;
+package HW03;
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;
