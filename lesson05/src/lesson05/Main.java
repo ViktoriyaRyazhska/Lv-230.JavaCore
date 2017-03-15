@@ -63,9 +63,9 @@ public class Main {
 		Employee [] ems = new Employee[5];
 		ems[0] = new Employee("Ivan", 1, 3400);
 		ems[1] = new Employee("Vasja", 1, 5000);
-		ems[2] = new Employee("Kostya", 2, 45);
+		ems[2] = new Employee("Kostya", 2, 4500);
 		ems[3] = new Employee("Nastya", 2, 3600.8);
-		ems[4] = new Employee("Pavel", 3, 9999.99);
+		ems[4] = new Employee("Pavel", 3, 4999.99);
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		System.out.println("Enter dep number");
 		int depNum = Integer.parseInt(br.readLine());
