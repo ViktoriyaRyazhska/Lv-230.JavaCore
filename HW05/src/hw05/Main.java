@@ -67,7 +67,7 @@ public class Main {
 			}
 		}
 		if(position != 0){
-			System.out.println(position);
+			System.out.println("Position of second positive number is: "+position);
 		}else{
 			System.out.println("No second positive number");
 		}
