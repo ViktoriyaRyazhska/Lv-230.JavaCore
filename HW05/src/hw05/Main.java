@@ -15,10 +15,10 @@ public class Main {
 				31, 31, 30, 31, 30, 31};
 		System.out.println("Enter number of month");
 		int monthNumber = Integer.parseInt(br.readLine());
-		for (int i = 0; i <= month_days.length; i++) {
-			if(i == monthNumber){
-				System.out.println("This month has "+month_days[i-1]+" days");
-			}
+		try{
+		System.out.println("This month has "+month_days[monthNumber-1]+"days");
+		}catch (Exception e) {
+			System.out.println("No such month");
 		}
 // Task 2		
 		System.out.println("\n Task 2 \n");
@@ -36,17 +36,17 @@ public class Main {
 				break;
 			}
 		}
-		int prod = 1;
-		for (int i = 5; i < array.length; i++) {
-			prod *= array[i];
-		}
 		if(sum != 0){
 			System.out.println("Sum of first 5 numbers is "+sum);
 		}else{
+			int prod = 1;
+			for (int i = 5; i < array.length; i++) {
+				prod *= array[i];
+			}
 			System.out.println("In first 5 numbers was negative number!!!");
 			System.out.println("Product of last 5 numbers is "+prod);
 		}
-		
+			
 //Task 3
 		System.out.println("\n Task 3(a)\n");
 		Scanner sc = new Scanner(System.in);
@@ -82,6 +82,7 @@ public class Main {
 			}
 		}
 		System.out.println("min: "+min+"\n position: "+pos);
+
 		
 //Task 4
 		System.out.println("\n Task 4 \n");
@@ -132,6 +133,8 @@ public class Main {
 		for (Car car : cars) {
 			System.out.println(car);
 		}
+		sc.close();
+		br.close();
 	}
 	
 }
