@@ -1,8 +1,11 @@
 package hom4;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+
 public class FindPosition {
 
-	public void PositionOfSecondnPositiveNumber(int[] array) {
+	public int PositionOfSecondnPositiveNumber(int[] array) {
 		int count = 0;
 		int position = 0;
 		for (int i = 0; i < array.length; i++) {
@@ -19,11 +22,10 @@ public class FindPosition {
 				break;
 			}
 		}
-
-		System.out.println("Position of second positive number: " + position);
+		return position;
 	}
 
-	public void minimum(int[] array) {
+	public int minimum(int[] array) {
 		int min = array[0];
 		int index = 0;
 
@@ -35,24 +37,23 @@ public class FindPosition {
 			}
 
 		}
-		System.out.println(min);
-		System.out.println(index);
+		return index;
 
 	}
 
-	public void enteringIntegersUntilFirstNegative(int numbers) {
+	public int enteringIntegersUntilFirstNegative(BufferedReader bf) throws NumberFormatException, IOException {
 		boolean isRun = true;
-		int count = 0;
+		int count = 1;
 
 		while (isRun) {
-
+			int numbers = Integer.parseInt(bf.readLine());
 			if (numbers <= 0) {
 				isRun = false;
 			} else if (numbers % 2 == 0) {
-				count++;
+				count *= numbers;
 			}
 		}
 
-		System.out.println(count);
+		return count;
 	}
 }
