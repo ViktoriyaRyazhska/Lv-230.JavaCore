@@ -7,11 +7,12 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        Car[] arrayOfCars = new Car[4];
+        Car[] arrayOfCars = new Car[5];
         arrayOfCars[0] = new Car("Toyota", 1995, 300);
         arrayOfCars[1] = new Car("Chevrolet", 1967, 600);
         arrayOfCars[2] = new Car("Ford", 2004, 400);
         arrayOfCars[3] = new Car("Ferrari", 2013, 500);
+        arrayOfCars[4] = new Car("Hello", 2013, 500);
 
         for (Car a:arrayOfCars){
             System.out.println(a);
@@ -19,12 +20,10 @@ public class Main {
 
         orderByYear(arrayOfCars);
 
-        System.out.println();
         for (Car a:arrayOfCars){
             System.out.println(a);
         }
 
-        System.out.println();
         showCarByYear(arrayOfCars);
 
 
@@ -40,18 +39,20 @@ public class Main {
                 }
             }
         }
+        System.out.println();
     }
     public static void showCarByYear(Car[] array) throws IOException {
         System.out.println("Pls enter year of car which u want");
         int inputCarYear = Integer.parseInt(bufferedReader.readLine());
-        for(Car c:array){
-            if(inputCarYear==c.getYearOFProduction()){
-                System.out.println(c);
-                break;
-            } else{
+        Car temp = null;
+        for(int i=0; i<array.length; i++){
+            if(inputCarYear==array[i].getYearOFProduction()){
+                temp = array[i];
+                System.out.println(temp);
+            }else if(temp==null && i==array.length-1){
                 System.out.println("Car with this year doesn't exist");
-                break;
             }
         }
+        System.out.println();
     }
 }
