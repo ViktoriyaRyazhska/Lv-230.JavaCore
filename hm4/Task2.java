@@ -1,5 +1,3 @@
-package temp;
-
 public class Task2 {
     public static void main(String[] args) {
         int[] array = new int[10];
@@ -13,7 +11,7 @@ public class Task2 {
         int sum = 0;
         for(int i=0; i<array.length; i++) {
             if (array[i] >= 0) {
-                if (i == 5){
+                if (i == 4){
                     System.out.println("Sum is = "+sum);
                     break;
                 }
