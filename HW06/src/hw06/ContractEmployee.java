@@ -13,7 +13,7 @@ public class ContractEmployee extends Employee implements Pay{
 	}
 	@Override
 	public String toString() {
-		return "ContractEmployee [monthPay=" + monthPay + ", federalTaxIdmember=" + federalTaxIdmember + "]";
+		return "ContractEmployee [monthPay=" + monthPay + ", ID" + getEmployeeld() + ", federalTaxIdmember=" + federalTaxIdmember + "]";
 	}
 	public double getMonthPay() {
 		return monthPay;
@@ -23,7 +23,7 @@ public class ContractEmployee extends Employee implements Pay{
 	}
 
 	@Override
-	public void calculatePay() {
-		System.out.println("Month pay is: "+monthPay);
+	public double calculatePay() {
+		return monthPay;
 	}
 }

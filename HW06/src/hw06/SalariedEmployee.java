@@ -26,12 +26,12 @@ public class SalariedEmployee extends Employee implements Pay{
 		this.salary = salary;
 	}
 	@Override
-	public void calculatePay() {
-			System.out.println("monthly salary "+hours * salary);
+	public double calculatePay() {
+		return hours * salary;
 	}
 	@Override
 	public String toString() {
-		return "SalariedEmployee [hours=" + hours + ", salary=" + salary + ", socialSecurityNumber="
+		return "SalariedEmployee [hours=" + hours + ", salary=" + salary + ", ID "+ getEmployeeld() + ", socialSecurityNumber="
 				+ socialSecurityNumber + "]";
 	}
 

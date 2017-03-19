@@ -102,8 +102,11 @@ public class Main {
 				}
 			}
 		}
+		if(product != 1){
 		System.out.println("Product of all even numbers is: "+product);
-		
+		}else{
+			System.out.println("No even numbers");
+		}
 // Task 5
 		System.out.println("\n Task 5 \n");
 		Car [] cars = new Car[4];

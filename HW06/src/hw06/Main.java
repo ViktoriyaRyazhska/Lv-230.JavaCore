@@ -23,8 +23,8 @@ public class Main {
 //			System.out.println(bird);
 //		}
 		
-// Tesk 2
-		Employee[]ems = new Employee[2];
+// Task 2
+		Employee[]ems = new Employee[4];
 		ems[0] = new SalariedEmployee();
 		ems[0].setEmployeeld("1");
 		if(ems[0] instanceof SalariedEmployee){
@@ -33,6 +33,7 @@ public class Main {
 			((SalariedEmployee) ems[0]).setSocialSecurityNumber("111");
 			((SalariedEmployee) ems[0]).calculatePay();
 		}
+		
 		ems[1] = new ContractEmployee();
 		ems[1].setEmployeeld("2");
 		if(ems[1] instanceof ContractEmployee){
@@ -40,9 +41,38 @@ public class Main {
 			((ContractEmployee) ems[1]).setFederalTaxIdmember("222");
 			((ContractEmployee) ems[1]).calculatePay();
 		}
+		ems[2] = new SalariedEmployee();
+		ems[2].setEmployeeld("3");
+		if(ems[2] instanceof SalariedEmployee){
+			((SalariedEmployee) ems[2]).setHours(20);
+			((SalariedEmployee) ems[2]).setSalary(99);
+			((SalariedEmployee) ems[2]).setSocialSecurityNumber("333");
+			((SalariedEmployee) ems[2]).calculatePay();
+		}
+		ems[3] = new ContractEmployee();
+		ems[3].setEmployeeld("4");
+		if(ems[3] instanceof ContractEmployee){
+			((ContractEmployee) ems[3]).setMonthPay(7500);
+			((ContractEmployee) ems[3]).setFederalTaxIdmember("444");
+			((ContractEmployee) ems[3]).calculatePay();
+		}
+//		for (Employee employee : ems) {
+//			System.out.println(employee);
+//		}
+		
+//Task 3
+		Employee tempEmployee;
+		for (int i = 0; i < ems.length-1; i++) {
+			for (int j = i; j < ems.length; j++) {
+				if(((Pay)ems[i]).calculatePay() < ((Pay)ems[j]).calculatePay()){
+					tempEmployee = ems[i];
+					ems[i] = ems[j];
+					ems[j] = tempEmployee;
+				}
+			}
+		}
 		for (Employee employee : ems) {
-			System.out.println(employee);
+			System.out.println(employee+" everage wage is: "+((Pay)employee).calculatePay());
 		}
 	}
-
 }
