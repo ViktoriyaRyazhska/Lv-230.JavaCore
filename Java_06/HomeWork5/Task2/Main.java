@@ -2,10 +2,7 @@ package pack_HomeWork5_2;
 
 public class Main {
 
-	private static double getSalary(Calculation calculation) {
-		return calculation.calculatePay();
-	}
-
+		
 	public static void main(String[] args) {
 
 		Calculation EmployeeList[] = new Calculation[4];
@@ -14,6 +11,7 @@ public class Main {
 		EmployeeList[2] = new ContractEmployee("Fedorov","IdFedorova", 12313177, 5000);
 		EmployeeList[3] = new ContractEmployee("Sidorov","IdSidorova", 98765545, 7000);
 
+		
 		int length = EmployeeList.length;
 		int i;
 		int j;
@@ -25,7 +23,7 @@ public class Main {
 				tmp = EmployeeList[i];
 				for (j = i; j >= step; j -= step) {
 
-					if (getSalary(tmp) > getSalary(EmployeeList[j - step])) {
+					if (tmp.calculatePay() > EmployeeList[j - step].calculatePay()) {
 						EmployeeList[j] = EmployeeList[j - step];
 					} else {
 						break;
