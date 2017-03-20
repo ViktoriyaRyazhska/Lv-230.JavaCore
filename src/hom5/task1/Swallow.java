@@ -9,8 +9,7 @@ public class Swallow extends FlyingBird {
 	@Override
 	public String toString() {
 		return "Swallow [fly()=" + fly() + ", isFeathers()=" + isFeathers() + ", isLayEggs()=" + isLayEggs()
-				+ ", toString()=" + super.toString() 
-				+ "]";
+				+ ", toString()=" + super.toString() + "]";
 	}
 
 }
