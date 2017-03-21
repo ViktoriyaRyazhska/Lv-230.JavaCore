@@ -3,26 +3,45 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Comparator;
 
 public class Numbers {
 
 	public static void main(String[] args) throws IOException {
 		int a = 0;
 		
-		ArrayList list = new ArrayList();
+		ArrayList myCollection = new ArrayList();
 BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
 int x = 0;
-while(x <= 10){
+while(x  <= 10){
 	System.out.println("Enter number");
 	a = Integer.parseInt(br.readLine());
-	
-	list.add(a);
+	myCollection.add(a);
 	x++;
 }
+System.out.println("Our numbers are " + myCollection);
 
-System.out.println(list);
+	ArrayList newCollection = new ArrayList();
+	newCollection = myCollection;
+	
 
+Comparator c = null;
+newCollection.sort(c);
+	for(int i = 0;i < newCollection.size(); i++){
 		
 	}
+	System.out.println(newCollection);
 
-}
+	
+	int x1 = 0;
+	int n = 0;
+	while( n < 10){
+	int s = (int) newCollection.get(x1);
+	n++;
+	if(s > 5){
+		newCollection.add(x1);
+	}
+	System.out.println(newCollection);
+	}
+	
