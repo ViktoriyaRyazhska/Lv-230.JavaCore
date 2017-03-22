@@ -33,7 +33,7 @@ public abstract class Bird {
 	    public void setLayEggs(String layEggs) {
 	        this.layEggs = layEggs;
 	    }
-
+//
 	    public abstract void fly();
 
 	    
