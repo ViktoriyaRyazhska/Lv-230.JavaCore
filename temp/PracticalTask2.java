@@ -21,6 +21,7 @@ public class PracticalTask2 {
 
         show(map);
         findByID(map);
+        findByName(map);
 
     }
     public static void show(Map<Integer, String> map){
@@ -32,14 +33,26 @@ public class PracticalTask2 {
     }
     public static void findByID(Map<Integer, String> map) throws IOException {
         System.out.println("Enter id pls");
+        Integer id = Integer.parseInt(reader.readLine());
+        if(map.containsKey(id)) {
+            for (Map.Entry<Integer, String> entry : map.entrySet()) {
+                if(entry.getKey().equals(id)){
+                    System.out.println(entry.getValue()+" - "+entry.getKey());
+                }
+            }
+        }else System.out.println("can't find this Name ");
+        System.out.println();
+    }
+    public static void findByName(Map<Integer, String> map) throws IOException {
+        System.out.println("Enter name pls");
         String nameInp = reader.readLine();
-        for(Map.Entry<Integer, String> entry:map.entrySet()){
-//            Integer id = entry.getKey();
-            //String name = entry.getValue();
-            if(map.containsValue(nameInp)){
-                map.g
-            }//else System.out.println("can't find");
-        }
+        if(map.containsValue(nameInp)) {
+            for (Map.Entry<Integer, String> entry : map.entrySet()) {
+                if(entry.getValue().equals(nameInp)){
+                    System.out.println(entry.getValue()+" "+entry.getKey());
+                }
+            }
+        }else System.out.println("can't find this Name ");
         System.out.println();
     }
 }
