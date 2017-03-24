@@ -23,7 +23,7 @@ public class Main {
 		
 		m.union(set1, set2);
 		m.intersect(set1, set2);
-		
+		//
 	}
 
 }
