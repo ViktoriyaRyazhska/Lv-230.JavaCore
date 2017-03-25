@@ -1,5 +1,7 @@
 package less7;
 
+import java.io.BufferedReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -41,6 +43,16 @@ public class Collec {
 			if (tmp > 20) {
 				it.remove();
 			}
+
+		}
+		return list;
+
+	}
+
+	public List<Integer> insertElements() {
+		List<Integer> list = new ArrayList<>();
+
+		for (int i = 0; i < 3; i++) {
 
 		}
 		return list;
