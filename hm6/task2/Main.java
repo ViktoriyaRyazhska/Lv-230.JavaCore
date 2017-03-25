@@ -5,20 +5,13 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        Student s1 = new Student("Orest", 5);
-        Student s2 = new Student("Oleg", 3);
-        Student s3 = new Student("Bob", 5);
-        Student s4 = new Student("Steve", 3);
-        Student s5 = new Student("Slavko", 4);
-        Student s6 = new Student("Rick", 3);
-
         List<Student> studentList = new ArrayList<>();
-        studentList.add(s1);
-        studentList.add(s2);
-        studentList.add(s3);
-        studentList.add(s4);
-        studentList.add(s5);
-        studentList.add(s6);
+        studentList.add(new Student("Orest", 5));
+        studentList.add(new Student("Oleg", 3));
+        studentList.add(new Student("Bob", 5));
+        studentList.add(new Student("Steve", 3));
+        studentList.add(new Student("Slavko", 4));
+        studentList.add(new Student("Rick", 3));
 
         printAll(studentList);
         studentList.sort(new Student.NameComparator());
