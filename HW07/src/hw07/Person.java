@@ -61,7 +61,4 @@ public class Person {
 			return false;
 		return true;
 	}
-	
-	
-
 }

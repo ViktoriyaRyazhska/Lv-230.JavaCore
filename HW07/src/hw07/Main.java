@@ -3,9 +3,12 @@ package hw07;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
@@ -56,9 +59,32 @@ public class Main {
 		br.close();
 		
 // Task 3
+		System.out.println();
+		List<Student>students = new ArrayList<>();
+		students.add(new Student("Ivan", 1));
+		students.add(new Student("Vasja", 1));
+		students.add(new Student("Ihor", 3));
+		students.add(new Student("Oleh", 2));
+		students.add(new Student("Olja", 3));
+		printStudents(students);
+		System.out.println();
+		students.sort(new Student.CompareByName());
+		for (Student student : students) {
+			System.out.println(student);
+		}
+		System.out.println();
+		students.sort(new Student.CompareByCourse());
+		for (Student student : students) {
+			System.out.println(student);
+		}
 		
-		
-		
+	}
+	
+	private static void printStudents(List<Student>stList){
+		Iterator<Student>it = stList.iterator();
+		while(it.hasNext()){
+			System.out.println(it.next());
+		}
 	}
 	
 	private static HashMap<Integer, Person> removeByFirstName(Map<Integer, Person> personMap, String name){
