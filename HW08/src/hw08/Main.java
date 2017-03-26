@@ -11,31 +11,36 @@ public class Main {
 	public static void main(String[] args) throws IOException {
 
 //Task 1		
-//		System.out.println("eNTER SENTENCE of 5 words");
-//		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-//		String sentence = br.readLine();
-//		String[] words = sentence.split(" ");
-//		String longest = null;
-//		for (int i = 1; i < words.length; i++) {
-//			if(words[i].length() > words[i-1].length()){
-//				longest = words[i];
-//			}
-//		}
-//		System.out.println(longest);
-//		System.out.println(longest.length());
-//		System.out.println(new StringBuilder(words[1]).reverse().toString());
+		System.out.println("Enter sentence of 5 words");
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		String sentence = br.readLine();
+		String[] words = sentence.split(" ");
+		String longest = null;
+		for (int i = 1; i < words.length; i++) {
+			if(words[i].length() > words[i-1].length()){
+				longest = words[i];
+			}
+		}
+		System.out.println("Longest word in sentence is: "+longest);
+		System.out.println("Length of longest word is: "+longest.length());
+		System.out.println("Reverse of second word: "+new StringBuilder(words[1]).reverse().toString());
 		
 // Task 2
 		String str = "I    am      learning     Java   Core";
-		String replaced = "";
-//		System.out.println(str.substring(0).replaceAll("[ ]*", " "));
-		Pattern p = Pattern.compile("[ ]{2,}");
-		Matcher m = p.matcher(str);
-		while(m.find()){
-			replaced = str.replaceAll(str.substring(m.start(), m.end()), " ");
-//			System.out.println(str.substring(m.start(), m.end()).replace);
+		System.out.println("Original sentence: "+str);
+		System.out.println("Sentence without whitespaces: "+str.replaceAll(" +", " "));
+		System.out.println();
+//Task 3
+		Pattern usd = Pattern.compile("[$][0-9]*\\.[0-9]*");
+		System.out.println("Pattern is $.. . .. enter 5 USD patterns");
+		for(int i = 0; i < 5; i++){
+			String textUSD = br.readLine();
+			Matcher match = usd.matcher(textUSD);
+				if(match.matches()){
+					System.out.println(textUSD);
+				}else{
+					System.out.println("no match");
+				}
 		}
-		System.out.println(replaced);
 	}
-
 }
