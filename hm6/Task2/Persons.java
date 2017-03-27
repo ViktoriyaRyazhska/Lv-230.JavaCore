@@ -24,16 +24,16 @@ public class Persons {
 		
 		System.out.println(peoples);
 		
-       
-	        
+                peoples.remove("Orest");
+	        System.out.println(peoples + " Without Orest");
 	        
 		// i dont know----
 		//There are at less two persons with the same firstName among these 10 people?
-		//Remove from the map person whose firstName is ”Orest” (or other). Print result.  
+		
 
 
 
-        System.out.println(peoples);
+        
  
  
         
