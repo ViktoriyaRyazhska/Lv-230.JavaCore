@@ -1,11 +1,10 @@
 package less7;
 
-import java.io.BufferedReader;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
+import java.util.Collections;
 
 public class Collec {
 
@@ -13,7 +12,7 @@ public class Collec {
 		list = new ArrayList<>();
 		Random random = new Random();
 		for (int i = 0; i < 15; i++) {
-			list.add(random.nextInt(30));
+			list.add(random.nextInt(10) - 10);
 		}
 
 		return list;
@@ -49,14 +48,17 @@ public class Collec {
 
 	}
 
-	public List<Integer> insertElements() {
-		List<Integer> list = new ArrayList<>();
+	public void insertElements(List<Integer> list) {
+		list.set(1, 2);
+		list.set(6, -3);
+		list.set(4, -4);
+		System.out.println(list);
+	}
 
-		for (int i = 0; i < 3; i++) {
+	public List<Integer> sort(List<Integer> list) {
 
-		}
+		Collections.sort(list);
 		return list;
 
 	}
-
 }
