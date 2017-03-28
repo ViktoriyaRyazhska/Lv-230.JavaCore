@@ -27,8 +27,11 @@ public class Persons {
                 peoples.remove("Orest");
 	        System.out.println(peoples + " Without Orest");
 	        
-		// i dont know----
-		//There are at less two persons with the same firstName among these 10 people?
+		Set<String> set = new HashSet(peoples.values());
+		 if(peoples.values().size()-set.size()>=2){
+			 System.out.println("yes-there*re 2 or more persons with the same last names");
+			 
+		 }
 		
 
 
