@@ -1,6 +1,6 @@
 package homework4;
 
-import java.util.Arrays;
+//import java.util.Arrays;
 
 //5) Create class Car with fields type, year of production and engine capacity.
 //Create and initialize four instances of class Car. Display cars:
@@ -12,8 +12,6 @@ public class Car {
 	private String type;
 	private int yearOfProduction;
 	private double engineCapacity;
-
-	static Car[] carList = new Car[0];
 
 	public String getType() {
 		return type;
@@ -43,11 +41,10 @@ public class Car {
 		this.type = type;
 		this.yearOfProduction = yearOfProduction;
 		this.engineCapacity = engineCapacity;
-		carList = Arrays.copyOf(carList, carList.length + 1);
-		carList[carList.length - 1] = this;
 	}
 
-	public static void outputByYearOfProd(int year) {
+
+	public static void outputByYearOfProd(int year, Car[] carList) {
 		int numberOfCars = 0;
 		for (Car car : carList) {
 			if (car.yearOfProduction == year) {
@@ -60,7 +57,7 @@ public class Car {
 		}
 	}
 
-	public static void sortByYearOfProd() {
+	public static void sortByYearOfProd(Car[] carList) {
 		Car tempCar;
 		for (int i = 0; i < carList.length - 1; i++) {
 			for (int j = i + 1; j < carList.length; j++) {
@@ -78,6 +75,6 @@ public class Car {
 
 	@Override
 	public String toString() {
-		return type + " " + yearOfProduction + " " + engineCapacity;
+		return type + ", " + yearOfProduction + ", engine capacity  " + engineCapacity + " litres.";
 	}
 }
