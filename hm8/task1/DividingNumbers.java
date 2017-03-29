@@ -19,7 +19,7 @@ public class DividingNumbers {
 			System.out.println("Your result is " + result.div(a, b)   );
 		}
 		
-		catch(IOException | NumberFormatException | ZeroNumberException e ){
+		catch(IOException | NumberFormatException | ArithmeticException | ZeroNumberException e ){
 			System.out.println(e);
 		}
 		
