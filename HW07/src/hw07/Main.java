@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -15,7 +14,7 @@ import java.util.Set;
 
 public class Main {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args){
 //Task 1
 		Coll coll = new Coll();
 		HashSet<Integer>set1 = (HashSet<Integer>) coll.fillSet();
@@ -52,12 +51,23 @@ public class Main {
 		printMap(personMap);
 		System.out.println("Enter name to remove");
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		String name = br.readLine();
+		String name = "";
+		try {
+			name = br.readLine();
+		} catch (IOException e) {
+			System.err.println(e.getMessage());
+		}
+		
 		removeByFirstName(personMap, name);
 		System.out.println();
 		printMap(personMap);
-		br.close();
+		try {
+			br.close();							//???????????????????????????
+		} catch (IOException e) {
+			
+		}
 		
+				
 // Task 3
 		System.out.println();
 		List<Student>students = new ArrayList<>();

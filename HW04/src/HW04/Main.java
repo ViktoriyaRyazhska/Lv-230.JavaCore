@@ -6,18 +6,34 @@ import java.io.InputStreamReader;
 
 public class Main {
 	
-	public static void main(String [] args) throws NumberFormatException, IOException {
+	public static void main(String [] args){
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
 
 // Task 1
 			System.out.println("Enter 1 float num");
-			float num1 = Float.parseFloat(br.readLine());
+			float num1 = 0;
+			try {
+				num1 = Float.parseFloat(br.readLine());
+			} catch (NumberFormatException | IOException e) {
+				System.err.println(e.getMessage());
+			}
 			System.out.println("Enter 2 float num");
-			float num2 = Float.parseFloat(br.readLine());
+			float num2 = 0;
+			try {
+				num2 = Float.parseFloat(br.readLine());
+			} catch (NumberFormatException | IOException e) {
+				System.err.println(e.getMessage());
+			}
 			System.out.println("Enter 3 float num");
-			float num3 = Float.parseFloat(br.readLine());
+			float num3 = 0;
+			try {
+				num3 = Float.parseFloat(br.readLine());
+			} catch (NumberFormatException | IOException e) {
+				System.err.println(e.getMessage());
+
+			}
 			if (isCont(num1) && isCont(num2) && isCont(num3)){
 				System.out.println("All numbers are in range!!!");
 			}else{
@@ -26,17 +42,38 @@ public class Main {
 			
 	// Task 2
 			System.out.println("Enter 1 int num");
-			int int1 = Integer.parseInt(br.readLine());
+			int int1 = 0;
+			try {
+				int1 = Integer.parseInt(br.readLine());
+			} catch (NumberFormatException | IOException e) {
+				System.err.println(e.getMessage());
+			}
 			System.out.println("Enter 2 int num");
-			int int2 = Integer.parseInt(br.readLine());
+			int int2 = 0;
+			try {
+				int2 = Integer.parseInt(br.readLine());
+			} catch (NumberFormatException | IOException e) {
+				System.err.println(e.getMessage());
+			}
 			System.out.println("Enter 3 int num");
-			int int3 = Integer.parseInt(br.readLine());
+			int int3 = 0;
+			try {
+				int3 = Integer.parseInt(br.readLine());
+			} catch (NumberFormatException | IOException e) {
+				System.err.println(e.getMessage());
+			}
 			System.out.println("Max value is: "+findBigest(findBigest(int1, int2), int3));
 			System.out.println("Min value is: "+findLessNumber(findLessNumber(int1, int2), int3));
 			
 	//Task 3
 			System.out.println("Enter number of HTTP error");
-			int error = Integer.parseInt(br.readLine());
+			int error = 0;
+			try {
+				error = Integer.parseInt(br.readLine());
+			} catch (NumberFormatException | IOException e) {
+				System.err.println(e.getMessage());
+
+			}
 			
 			switch (error) {
 			case 400:{
@@ -109,6 +146,11 @@ public class Main {
 		Dog dog4 = compareAge(compareAge(dog2, dog2), dog3);
 		System.out.println(dog4);
 		
+		try {
+			br.close();
+		} catch (IOException e) {
+			System.err.println(e.getMessage());
+		}
 	}
 	
 	public static Dog compareAge(Dog dog1, Dog dog2) {

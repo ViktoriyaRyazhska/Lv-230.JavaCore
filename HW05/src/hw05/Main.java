@@ -7,14 +7,19 @@ import java.util.Scanner;
 
 public class Main {
 
-	public static void main(String[] args) throws NumberFormatException, IOException {
+	public static void main(String[] args) {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 // Task 1
 		
 		int month_days[ ]  = {31, 28, 31, 30, 31, 30, 
 				31, 31, 30, 31, 30, 31};
 		System.out.println("Enter number of month");
-		int monthNumber = Integer.parseInt(br.readLine());
+		int monthNumber = 0;
+		try {
+			monthNumber = Integer.parseInt(br.readLine());
+		} catch (NumberFormatException | IOException e1) {
+			System.err.println(e1.getMessage());
+		}
 		try{
 		System.out.println("This month has "+month_days[monthNumber-1]+"days");
 		}catch (Exception e) {
@@ -26,7 +31,11 @@ public class Main {
 		int [] array = new int[10];
 		System.out.println("Enter 10 integer numbers");
 		for (int i = 0; i < array.length; i++) {
-			array[i] = Integer.parseInt(br.readLine());
+			try {
+				array[i] = Integer.parseInt(br.readLine());
+			} catch (NumberFormatException | IOException e) {
+				System.err.println(e.getMessage());
+			}
 		}
 		for (int i = 0; i < 5; i++) {
 			if(array[i] > 0){
@@ -91,7 +100,12 @@ public class Main {
 		int product = 1;
 		int countNum = 0;
 		while(run){
-			int num = Integer.parseInt(br.readLine());
+			int num = 0;
+			try {
+				num = Integer.parseInt(br.readLine());
+			} catch (NumberFormatException | IOException e) {
+				System.err.println(e.getMessage());
+			}
 			countNum++;
 			System.out.println("count: "+countNum+" number: "+num);
 			if(num <= 0){
@@ -115,7 +129,12 @@ public class Main {
 		cars[2] = new Car(TypeOfCar.SEDAN, 1996, 2.2);
 		cars[3] = new Car(TypeOfCar.CABRI, 2000, 1.6);
 		System.out.println("Enter a car`s year of production");
-		int year = Integer.parseInt(br.readLine());
+		int year = 0;
+		try {
+			year = Integer.parseInt(br.readLine());
+		} catch (NumberFormatException | IOException e) {
+			System.err.println(e.getMessage());
+		}
 		for (Car car : cars) {
 			if(car.getYear() == year){
 				System.out.println(car);
@@ -137,7 +156,8 @@ public class Main {
 			System.out.println(car);
 		}
 		sc.close();
-		br.close();
+		
+		
 	}
 	
 }

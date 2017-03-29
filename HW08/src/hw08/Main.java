@@ -8,12 +8,17 @@ import java.util.regex.Pattern;
 
 public class Main {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args){
 
 //Task 1		
 		System.out.println("Enter sentence of 5 words");
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		String sentence = br.readLine();
+		String sentence = "";
+		try {
+			sentence = br.readLine();
+		} catch (IOException e) {
+			System.err.println(e.getMessage());
+		}
 		String[] words = sentence.split(" ");
 		String longest = null;
 		for (int i = 1; i < words.length; i++) {
@@ -34,7 +39,12 @@ public class Main {
 		Pattern usd = Pattern.compile("[$][0-9]*\\.[0-9]*");
 		System.out.println("Pattern is $.. . .. enter 5 USD patterns");
 		for(int i = 0; i < 5; i++){
-			String textUSD = br.readLine();
+			String textUSD = "";
+			try {
+				textUSD = br.readLine();
+			} catch (IOException e) {
+				System.err.println(e.getMessage());
+			}
 			Matcher match = usd.matcher(textUSD);
 				if(match.matches()){
 					System.out.println(textUSD);
