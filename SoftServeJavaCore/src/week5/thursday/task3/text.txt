@@ -1,0 +1,20 @@
+JavaScript (/?d???v??skr?pt/[6]) is a high-level, dynamic, untyped, and interpreted programming language.[7] 
+It has been standardized in the ECMAScript language specification.[8]
+ Alongside HTML and CSS, JavaScript is one of the three core technologies of World Wide Web content production; 
+the majority of websites employ it, and all modern Web browsers support it without the need for plug-ins.[7] 
+JavaScript is prototype-based with first-class functions, making it a multi-paradigm language, 
+supporting object-oriented,[9] imperative, and functional programming styles.[7] 
+It has an API for working with text, arrays, dates and regular expressions, but does not include any I/O, 
+such as networking, storage, or graphics facilities, relying for these upon the host environment in which it is embedded.[8]
+
+Although there are strong outward similarities between JavaScript and Java, including language name, syntax, 
+and respective standard libraries, the two are distinct languages and differ greatly in their design. 
+JavaScript var influenced by programming languages such as Self and Scheme.[10]
+
+JavaScript is also used in environments that are not Web-based, such as PDF documents, site-specific browsers, 
+and desktop widgets. Newer and faster JavaScript virtual machines (VMs) and platforms built upon them 
+have also increased the popularity of JavaScript for server-side Web applications. 
+On the client side, developers have traditionally implemented JavaScript as an interpreted language, 
+but more recent browsers perform just-in-time compilation. Programmers also use JavaScript in video-game development, 
+in crafting desktop var mobile applications, and in server-side network programming with run-time environments
+such as Node.js.
