@@ -6,7 +6,6 @@ package week5.tuesday.task1;
 public class Main {
     public static void main(String[] args) {
 
-        // Тут треба кожен об'єкт окремо в try-catch???
         try {
             Plant plant1 = new Plant(5, "RED", "ALGAE");
             Plant plant2 = new Plant(4, "Green", "LIVERWORST");
