@@ -12,3 +12,7 @@ link
 vryazhskaya@gmail.com
 
 Link to file with checked HW https://docs.google.com/document/d/1vbW-C5AOW7MR9t1vhmThldSPPxcGFhFx7CJrfMKrrJM/edit?usp=sharing
+
+Links:
+Hibernate - http://www.javatpoint.com/hibernate-tutorial
+
