@@ -50,6 +50,7 @@ public class Main {
 		personMap.put(3, new Person("Anton", "Chehov"));
 		printMap(personMap);
 		System.out.println("Enter name to remove");
+		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String name = "";
 		try {
@@ -62,11 +63,11 @@ public class Main {
 		System.out.println();
 		printMap(personMap);
 		try {
-			br.close();							//???????????????????????????
+			br.close();
 		} catch (IOException e) {
-			
-		}
-		
+			e.printStackTrace();
+		}				
+	
 				
 // Task 3
 		System.out.println();
