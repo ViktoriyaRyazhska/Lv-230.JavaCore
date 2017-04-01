@@ -1,0 +1,3 @@
+9 - number of lines in file1.txt 
+Create a thread «one», which would start the thread «two», which has to output its number («Thread number two») 3 times and create thread «three», which would to output message «Thread number three» 5 times.
+Melnyk Orest, 09.06.1995

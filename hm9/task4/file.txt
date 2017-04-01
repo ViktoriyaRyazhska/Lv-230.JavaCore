@@ -1,0 +1,9 @@
+Run three threads and output there different messages for 5 times. The third thread supposed to start after finishing working of the two previous threads.
+Cause a deadlock. Organize the expectations of ending a thread in main(), and make the end of the method main() in this thread.
+Create a thread «one», which would start the thread «two», which has to output its number («Thread number two») 3 times and create thread «three», which would to output message «Thread number three» 5 times.
+Create file1.txt file with a text about your career.
+Read context from file into array of strings. Each array item contains one line from file.
+Write in to the file2.txt
+   1) number of lines in file1.txt.
+   2) the longest line in file1.txt.
+   3) your name and birthday date.
