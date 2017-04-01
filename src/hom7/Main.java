@@ -10,8 +10,11 @@ public class Main {
 		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
 		StringExe exe = new StringExe();
 		System.out.println("Enter sentence: ");
-		System.out.println(exe.findLongestWord(bf.readLine()));
-
+		// System.out.println(exe.findLongestWord(bf.readLine()));
+//		System.out.println(exe.reverse(bf.readLine()));
+		// System.out.println(exe.determineNumber(bf.readLine()));
+		// System.out.println(exe.converSpace(bf.readLine()));
+		exe.usCurrency(bf.readLine());
 	}
 
 }

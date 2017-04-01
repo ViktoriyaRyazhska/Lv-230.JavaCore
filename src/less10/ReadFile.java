@@ -51,6 +51,7 @@ public class ReadFile {
 
 	public void findVerb(List<String> list, String someverb) {
 		Pattern p = Pattern.compile(someverb);
+		String line = null;
 		for (int i = 0; i < list.size(); i++) {
 			Matcher m = p.matcher(list.get(i));
 			if (m.find()) {

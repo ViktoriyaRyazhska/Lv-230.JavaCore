@@ -31,7 +31,7 @@ public class Main {
 		System.out.println(list.size());
 		file.numberOfSymbols(list);
 		System.out.println("Longest line: " + file.findTheLongestLine(list));
-		System.out.println("Sortest line: " + file.findTheShortesLine(list));
+		System.out.println("Shortest line: " + file.findTheShortesLine(list));
 		file.findVerb(list, "it");
 
 	}
