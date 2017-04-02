@@ -1,0 +1,3 @@
+Number of lines: 3
+Longest line is: I love codding, try to find something new everytime it's length is: 51
+Birth date: 26.10.1986
