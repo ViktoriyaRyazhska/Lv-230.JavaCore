@@ -27,27 +27,33 @@ public class Main {
 //		thread1.start();
 //		thread2.start();
 //		thread3.start();
+		
+// Task 3
+		Thread th2 = new MyThread("two", 5);
+		Thread th = new MyThread("one",th2);
+		Thread th3 = new MyThread("three", 3);
+		th3.start();
 	
 //Task 4
-		String fileName = "file1.txt";
-
-		Text text = new Text();
-		String[] array = new String[3];
-		try {
-			array = text.readFile(fileName);
-		} catch (IOException e) {
-			System.err.println(e.getMessage());
-		}
-		
-		for (int i = 0; i < array.length; i++) {
-			System.out.println(array[i]);
-		}
-		
-		try {
-			text.writeFile(fileName, array);
-		} catch (IOException e) {
-			System.err.println(e.getMessage());
-		}
+//		String fileName = "file1.txt";
+//
+//		Text text = new Text();
+//		String[] array = new String[3];
+//		try {
+//			array = text.readFile(fileName);
+//		} catch (IOException e) {
+//			System.err.println(e.getMessage());
+//		}
+//		
+//		for (int i = 0; i < array.length; i++) {
+//			System.out.println(array[i]);
+//		}
+//		
+//		try {
+//			text.writeFile(fileName, array);
+//		} catch (IOException e) {
+//			System.err.println(e.getMessage());
+//		}
 		
 	}
 
