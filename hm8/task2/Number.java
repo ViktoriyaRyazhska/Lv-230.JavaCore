@@ -8,24 +8,25 @@ public class Number {
 		
 		Number result = new Number();
 		
-		int start = 1;
-		int end = 100;
+		
 		int number = 0;
 		
 		try(BufferedReader br = new BufferedReader(new InputStreamReader(System.in))){
 			System.out.println("Enter your number please");
 			number = Integer.parseInt(br.readLine());
-			System.out.println("Your result is " + result.readNumber(start, end, number));
+			System.out.println("Your result is " + result.readNumber(number));
 		}
 		catch(IOException | NumberFormatException  | MyException e){
-			System.out.println(e.getMessage());
+			System.out.println("Your number is not beetwean 1-100.Please input another number");
 			
 		}
 		
 	}
 
-	public int readNumber(int start, int end, int number) throws MyException{
-		if(number>start && number>end){
+	public int readNumber(int number) throws MyException{
+		int start = 1;
+		int end = 100;
+		if(number>start && number<end){
 			return number;
 		}
 		else{
