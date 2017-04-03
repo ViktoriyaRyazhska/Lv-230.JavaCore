@@ -3,7 +3,7 @@ package hom8;
 public class HwException {
 
 	public double div(double numb1, double numb2) throws ArithmeticException {
-		if (numb1 == 0 || numb2 == 0) {
+		if (numb2 == 0) {
 			throw new ArithmeticException();
 		}
 		return numb1 / numb2;

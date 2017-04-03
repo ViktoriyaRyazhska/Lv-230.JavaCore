@@ -8,7 +8,7 @@ public class Student {
 	private String name;
 	private Integer course;
 
-	Student() {
+	public Student() {
 
 	}
 
@@ -29,7 +29,7 @@ public class Student {
 
 	}
 
-	private class NameComparator implements Comparator<Student> {
+	private static class NameComparator implements Comparator<Student> {
 
 		@Override
 		public int compare(Student o1, Student o2) {
@@ -38,7 +38,7 @@ public class Student {
 
 	}
 
-	private class CourseComparator implements Comparator<Student> {
+	private static class CourseComparator implements Comparator<Student> {
 
 		@Override
 		public int compare(Student o1, Student o2) {
@@ -47,11 +47,11 @@ public class Student {
 
 	}
 
-	public Comparator<Student> getNameComparator() {
+	public static Comparator<Student> getNameComparator() {
 		return new NameComparator();
 	}
 
-	public Comparator<Student> getCourseComparator() {
+	public static Comparator<Student> getCourseComparator() {
 		return new CourseComparator();
 	}
 

@@ -58,12 +58,12 @@ public class Main {
 		Student student = new Student();
 		System.out.println("Enter number of course: ");
 		student.printStudent(list, Integer.parseInt(bf.readLine()));
-		list.sort(student.getNameComparator());
+		list.sort(Student.getNameComparator());
 		System.out.println("Sort by name");
 		for (Student student2 : list) {
 			System.out.println(student2);
 		}
-		list.sort(student.getCourseComparator());
+		list.sort(Student.getCourseComparator());
 		System.out.println("Sort by course");
 		for (Student student2 : list) {
 			System.out.println(student2);
