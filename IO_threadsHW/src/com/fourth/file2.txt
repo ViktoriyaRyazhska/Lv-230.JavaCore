@@ -1,0 +1,4 @@
+The number of lines in MyCareer.txt: 4
+The longest line is: now I stydy at National Lviv Politechnic University
+Your name is: Roman
+Your birth date is: 17.05.1995
