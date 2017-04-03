@@ -7,7 +7,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Main {
-	static int numberOfLines = 0;
+	static int wait = 0;
 	static String longestLine;
 	static int lengthOfLine = 0;
 	static String name;
@@ -28,7 +28,7 @@ public class Main {
 			String line;
 			while ((line = reader.readLine()) != null) {
 
-				numberOfLines++;
+				wait++;
 				if (line.length() > lengthOfLine) {
 					lengthOfLine = line.length();
 					longestLine = line;
@@ -47,7 +47,7 @@ public class Main {
 				}
 			}
 
-			bw.write("The number of lines in file1.txt: " + numberOfLines + "\n");
+			bw.write("The number of lines in file1.txt: " + wait + "\n");
 			bw.write("The longest line is: " + longestLine + "\n");
 			bw.write("Your name is: " + name + "\n");
 			bw.write("Your birth date is: " + date);
