@@ -1,0 +1,58 @@
+JOB DESCRIPTION
+Company Overview:
+
+Netsmart is healthcare’s largest human services and integrated care technology provider. Netsmart technology platforms and expertise are integral to the delivery of outcomes-based services and care to more than 25 million persons nationwide. Netsmart serves more than 500,000 users in more than 24,000 organizations across all 50 states. Netsmart client communities include behavioral health, addiction treatment, intellectual and developmental disabilities, child and family services, public health, home health, hospice and palliative care, private duty and vital records.
+
+We became the industry leader through the creation of cutting edge software solutions to meet our client’s needs. This level of creation and product evolution is only made possible by assembling a team of the best and the brightest technical talent in the industry. Do you have what it takes to join us on this journey?
+
+Java Developer Overview:
+
+The successful candidate will be developing the next generation of support and analytics tools for our solutions.  Tenacity to learn new technologies, rapidly apply lessons learned and collaborate across the organization is fundamental to being successful in this role, and is critical to the team’s success.  We value results and will empower efforts to raise ourselves to the next level.
+
+Responsibilities:
+
+Understanding business requirements
+
+Creating well architected and structured solutions
+
+Working as collaborative member of the engineering team
+
+Requirements:
+
+3+ years programming experience developing commercial Java web applications
+
+Ability to take initiative and manage multiple detailed tasks in a fast paced and ever changing environment
+
+Strong written and verbal communication skills
+
+Excellent organizational skills
+
+Bachelor or Technical Degree in Computer Science, IS, or IT is preferred
+
+Additional Technology Experience Preferred:
+
+Agile Methodologies
+
+JIRA
+
+Subversion or Git
+
+Angular JS
+
+JX-RS
+
+PhoneGap
+
+Maven
+
+Portlet API
+
+In Addition to a Competitive Salary, Successful Candidates Will Receive:
+
+Medical, Dental and Vision Insurance available Day 1
+
+Life Insurance
+
+Short/Long Term Disability
+
+401(k) Plan/EAP

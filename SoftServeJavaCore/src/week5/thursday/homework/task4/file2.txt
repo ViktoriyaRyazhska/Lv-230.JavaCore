@@ -1,0 +1,3 @@
+Number of lines int file1.txt: 58
+The longest line: Netsmart is healthcare’s largest human services and integrated care technology provider. Netsmart technology platforms and expertise are integral to the delivery of outcomes-based services and care to more than 25 million persons nationwide. Netsmart serves more than 500,000 users in more than 24,000 organizations across all 50 states. Netsmart client communities include behavioral health, addiction treatment, intellectual and developmental disabilities, child and family services, public health, home health, hospice and palliative care, private duty and vital records.
+Name: Vladyslav, Birthday: 14.09.1996
