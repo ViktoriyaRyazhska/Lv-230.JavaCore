@@ -1,0 +1,3 @@
+Input file consists of 6
+The longest line in the input file is: <<Read context from file into array of strings. Each array item contains one line from file.>>, it consists of 90 symbols.
+Michael Kalyn, 21.06.1984 
