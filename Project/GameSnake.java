@@ -59,15 +59,15 @@ public class GameSnake {
         snake = new Snake(START_SNAKE_X, START_SNAKE_Y, SNAKE_SIZE, START_DIRECTION);//object snake position size
         food = new Food();
  
-        while (!gameOver) {//безперервний цикл
+        while (!gameOver) {//ГЎГҐГ§ГЇГҐГ°ГҐГ°ГўГ­ГЁГ© Г¶ГЁГЄГ«
             snake.move();
             if (food.isEaten()) {
                 food.next();
             }
             canvasPanel.repaint();
             try {
-                Thread.sleep(DELAY);//тормозіння руху змійки
-            } catch (InterruptedException e) { e.printStackTrace(); }//дозволяэ рухатися
+                Thread.sleep(DELAY);//ГІГ®Г°Г¬Г®Г§ВіГ­Г­Гї Г°ГіГµГі Г§Г¬ВіГ©ГЄГЁ
+            } catch (InterruptedException e) { e.printStackTrace(); }//Г¤Г®Г§ГўГ®Г«ГїГЅ Г°ГіГµГ ГІГЁГ±Гї
         }
     }
  
@@ -76,7 +76,7 @@ public class GameSnake {
         int direction;
  
         public Snake(int x, int y, int length, int direction) {
-            for (int i = 0; i < length; i++) {//робимо змійку з пойнтів
+            for (int i = 0; i < length; i++) {//Г°Г®ГЎГЁГ¬Г® Г§Г¬ВіГ©ГЄГі Г§ ГЇГ®Г©Г­ГІВіГў
                 Point point = new Point(x-i, y);
                 snake.add(point);
             }
@@ -85,7 +85,7 @@ public class GameSnake {
          
         boolean isInsideSnake(int x, int y) {
             for (Point point : snake) {
-                if ((point.getX() == x) && (point.getY() == y)) {//смерть змійки
+                if ((point.getX() == x) && (point.getY() == y)) {//Г±Г¬ГҐГ°ГІГј Г§Г¬ВіГ©ГЄГЁ
                     return true;
                 }
             }
@@ -94,16 +94,16 @@ public class GameSnake {
  
         boolean isFood(Point food) {
             return ((snake.get(0).getX() == food.getX()) && (snake.get(0).getY() == food.getY()));
-        }//поглинаємо обєкт їжа
+        }//ГЇГ®ГЈГ«ГЁГ­Г ВєГ¬Г® Г®ГЎВєГЄГІ ВїГ¦Г 
          
         void move() {
             int x = snake.get(0).getX();
-            int y = snake.get(0).getY();//голова управляє всім
+            int y = snake.get(0).getY();//ГЈГ®Г«Г®ГўГ  ГіГЇГ°Г ГўГ«ГїВє ГўГ±ВіГ¬
             if (direction == LEFT) { x--; }
             if (direction == RIGHT) { x++; }
             if (direction == UP) { y--; }
             if (direction == DOWN) { y++; }
-            if (x > PROGRAM_WIDTH - 1) { x = 0; }//робимо щоб за межы не виходила, а поверталася на 0 координат
+            if (x > PROGRAM_WIDTH - 1) { x = 0; }//Г°Г®ГЎГЁГ¬Г® Г№Г®ГЎ Г§Г  Г¬ГҐГ¦Г» Г­ГҐ ГўГЁГµГ®Г¤ГЁГ«Г , Г  ГЇГ®ГўГҐГ°ГІГ Г«Г Г±Гї Г­Г  0 ГЄГ®Г®Г°Г¤ГЁГ­Г ГІ
             if (x < 0) { x = PROGRAM_WIDTH - 1; }
             if (y > PROGRAM_HEIGHT - 1) { y = 0; }
             if (y < 0) { y = PROGRAM_HEIGHT - 1; }
@@ -119,13 +119,13 @@ public class GameSnake {
          
         void setDirection(int direction) {
             if ((direction >= LEFT) && (direction <= DOWN)) {
-                if (Math.abs(this.direction - direction) != 2) {//не я
+                if (Math.abs(this.direction - direction) != 2) {//Г­ГҐ Гї
                     this.direction = direction;
                 }
             }
         }
  
-        void paint(Graphics g) {//метод малювання інтерфейсу
+        void paint(Graphics g) {//Г¬ГҐГІГ®Г¤ Г¬Г Г«ГѕГўГ Г­Г­Гї ВіГ­ГІГҐГ°ГґГҐГ©Г±Гі
             for (Point point : snake) {
                 point.paint(g);
             }
@@ -135,7 +135,7 @@ public class GameSnake {
     class Food extends Point {
  
         public Food() {
-            super(-1, -1);//положення поза межами першої їжі
+            super(-1, -1);//ГЇГ®Г«Г®Г¦ГҐГ­Г­Гї ГЇГ®Г§Г  Г¬ГҐГ¦Г Г¬ГЁ ГЇГҐГ°ГёГ®Вї ВїГ¦Ві
             this.color = FOOD_COLOR;
         }
          
@@ -167,7 +167,9 @@ public class GameSnake {
  
         void paint(Graphics g) {
             g.setColor(color);
-            g.fillOval(x * POINT_RADIUS, y * POINT_RADIUS, POINT_RADIUS, POINT_RADIUS);//малюємо овальну форму 
+         g.drawRect(x * POINT_RADIUS, y * POINT_RADIUS, POINT_RADIUS, POINT_RADIUS);   
+         //g.fillOval(x * POINT_RADIUS, y * POINT_RADIUS, POINT_RADIUS, POINT_RADIUS);
+         //Г¬Г Г«ГѕВєГ¬Г® Г®ГўГ Г«ГјГ­Гі ГґГ®Г°Г¬Гі 
         }
  
         int getX() { return x; }
