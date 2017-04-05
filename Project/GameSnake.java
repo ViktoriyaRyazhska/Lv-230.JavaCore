@@ -21,8 +21,8 @@ public class GameSnake {
     final int RIGHT = 39;
     final int DOWN = 40;
     final int START_DIRECTION = RIGHT;
-    final Color DEFAULT_COLOR = Color.black;
-    final Color FOOD_COLOR = Color.green;
+    final Color DEFAULT_COLOR = Color.RED;
+    final Color FOOD_COLOR = Color.orange;
     final String GAME_OVER_MSG = "GAME OVER";
     
     Snake snake;
@@ -38,7 +38,7 @@ public class GameSnake {
     }
      
     void go() {
-        frame = new JFrame(TITLE_OF_GAME + " : " + SNAKE_SIZE);//title windo
+        frame = new JFrame(TITLE_OF_GAME + " : " + "Score " + SNAKE_SIZE);//title windo
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//exit on close
         frame.setSize(PROGRAM_WIDTH * POINT_RADIUS + X, PROGRAM_HEIGHT * POINT_RADIUS + Y);
         frame.setLocation(START_LOCATION, START_LOCATION);
@@ -111,7 +111,7 @@ public class GameSnake {
             snake.add(0, new Point(x, y));
             if (isFood(food)) {
                 food.eat();
-                frame.setTitle(TITLE_OF_GAME + " : " + snake.size());
+                frame.setTitle(TITLE_OF_GAME + " : " + "Score:" + snake.size());
             } else {
                 snake.remove(snake.size() - 1);
             }
