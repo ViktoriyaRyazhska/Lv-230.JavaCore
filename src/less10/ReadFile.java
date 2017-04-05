@@ -15,6 +15,7 @@ public class ReadFile {
 		while ((str = bf.readLine()) != null) {
 			list.add(str);
 		}
+		bf.close();
 		return list;
 
 	}
