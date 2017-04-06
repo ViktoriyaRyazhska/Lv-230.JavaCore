@@ -21,6 +21,7 @@ public class Main {
 			System.out.println("Enter 2 to write employee to file");
 			System.out.println("Enter 3 to show all employee");
 			System.out.println("Enter 4 to find employee by id");
+			System.out.println("Enter 5 to remove employee");
 			System.out.println("Enter 0 to exit");
 			switch (bf.readLine()) {
 			case "1": {
@@ -53,6 +54,11 @@ public class Main {
 			case "4": {
 				System.out.println("Enter employee id: ");
 				employee.findEmployeeById(list, Integer.parseInt(bf.readLine()));
+				break;
+			}
+			case "5": {
+				System.out.println("Enter employee id: ");
+				employee.removeEmployeeById(list, Integer.parseInt(bf.readLine()));
 				break;
 			}
 

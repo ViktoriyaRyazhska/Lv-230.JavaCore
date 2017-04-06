@@ -32,6 +32,14 @@ public abstract class Employee {
 		}
 	}
 
+	public void removeEmployeeById(List<Employee> list, int id) {
+		for (int i = 0; i < list.size(); i++) {
+			if (id == list.get(i).getEmployeeid()) {
+				list.remove(i);
+			}
+		}
+	}
+
 	public List<Employee> addEmployee(List<Employee> list, Employee employee) {
 		list.add(employee);
 		return list;
