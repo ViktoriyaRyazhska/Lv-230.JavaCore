@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.forest.guessthegame.GameActivity">
+
+
+    <ImageSwitcher
+        android:id="@id/gameFrameSwitcher"
+        android:background="@color/Black"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"/>
+
+
+    <LinearLayout
+        android:gravity="top"
+        android:id="@id/linearLayoutTopButtons"
+        android:layout_width="fill_parent"
+        android:layout_height="75.0dip"
+        android:baselineAligned="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:splitMotionEvents="false">
+
+    <RelativeLayout
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:id="@+id/relativeLayout">
+
+        <Button
+            android:id="@id/btn_top_left"
+            android:alpha="0.75"
+            android:textSize="0dp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="2.0dip"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="2"
+            android:minLines="1"
+            android:textColor="@color/White"
+            android:tag="@string/top_left" />
+
+        <TextView
+            android:id="@id/textView_btn_top_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+
+            android:textSize="30dp"
+            android:maxLines="2"
+            android:minLines="1"
+            android:ellipsize="end"
+            android:textAppearance="@style/text_reg"
+            android:textColor="@color/White" />
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <Button
+                android:ellipsize="end"
+                android:alpha="0.75"
+                android:textSize="0dp"
+                android:gravity="center"
+                android:id="@id/btn_top_right"
+                android:tag="@string/top_right"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="2.0dip"
+                android:maxLines="2"
+                android:minLines="1" style="@style/text_reg" />
+
+            <TextView
+                android:id="@id/textView_btn_top_right"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:maxLines="2"
+                android:minLines="1"
+                android:ellipsize="end"
+                android:textAppearance="@style/text_reg"
+                android:textColor="@color/White" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="bottom"
+        android:id="@id/linearLayoutBottomButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="75.0dip"
+        android:baselineAligned="false"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:splitMotionEvents="false">
+
+        <RelativeLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <Button
+                android:id="@id/btn_bottom_left"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:alpha="0.75"
+                android:textSize="0dp"
+                android:tag="@string/bottom_left"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="2.0dip"
+                android:maxLines="2"
+                android:minLines="1"
+                android:layout_alignParentBottom="true" style="@style/text_reg" />
+
+            <TextView
+                android:id="@id/textView_btn_bottom_left"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:textAppearance="@style/text_reg"
+                android:textColor="@color/White" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <Button
+                android:id="@id/btn_bottom_right"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:alpha="0.75"
+                android:textSize="0dp"
+                android:tag="@string/bottom_right"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="2.0dip"
+                android:maxLines="2"
+                android:minLines="1"
+                android:layout_alignParentBottom="true" style="@style/text_reg" />
+
+            <TextView
+                android:id="@id/textView_btn_bottom_right"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:textAppearance="@style/text_reg"
+                android:textColor="@color/White" />
+
+            <!--android:text="here will be name of game"-->
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
