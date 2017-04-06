@@ -118,6 +118,7 @@ public class MainFrame {
 			}
 
 		} catch (IOException e) {
+			System.out.println("Can't read data from "+txtFile);
 		}
 
 		return ManagerList;

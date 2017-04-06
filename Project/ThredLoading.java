@@ -16,8 +16,9 @@ public class ThredLoading extends Thread {
 
 	@Override
 	public void run() {
+		String txtFile = null;
 		try {
-			String txtFile = "Manager1.txt";
+			txtFile = "Manager1.txt";
 			String Work1 = "Manager1 Dnipropetrovsk Partner1 Start 2\n";
 			Work1 = Work1.concat("Manager1 Dnipropetrovsk Partner2 New 1\n");
 			Work1 = Work1.concat("Manager1 Dnipropetrovsk Partner3 Start 1\n");
@@ -32,6 +33,11 @@ public class ThredLoading extends Thread {
 			System.out.println("work of Manager1 is loaded");
 			System.out.println("-------------------------");
 			sleep(10000);
+		} catch (IOException | InterruptedException e) {
+			System.out.println("Dedalock with loading work of manager1");
+		}
+
+		try {
 			txtFile = "Manager2.txt";
 			String Work2 = "Manager2 Lviv Partner1 Start 4.2\n";
 			Work2 = Work2.concat("Manager2 Lviv Partner2 End 4.5\n");
@@ -47,6 +53,10 @@ public class ThredLoading extends Thread {
 			System.out.println("work of Manager2 is loaded");
 			System.out.println("-------------------------");
 			sleep(10000);
+		} catch (IOException | InterruptedException e) {
+			System.out.println("Dedalock with loading work of manager2");
+		}
+		try {
 			txtFile = "Manager3.txt";
 			String Work3 = "Manager3 Kharkiv Partner1 Start 4\n";
 			Work3 = Work3.concat("Manager3 Kharkiv Partner2 End 2\n");
@@ -62,6 +72,10 @@ public class ThredLoading extends Thread {
 			System.out.println("work of Manager3 is loaded");
 			System.out.println("-------------------------");
 			sleep(10000);
+		} catch (IOException | InterruptedException e) {
+			System.out.println("Dedalock with loading work of manager3");
+		}
+		try {
 			txtFile = "Manager4.txt";
 			String Work4 = "Manager4 Odesa Partner1 Start 1\n";
 			Work4 = Work4.concat("Manager4 Odesa Partner2 New 2\n");
@@ -78,7 +92,7 @@ public class ThredLoading extends Thread {
 			System.out.println("-------------------------");
 
 		} catch (IOException | InterruptedException e) {
-			e.printStackTrace();
+			System.out.println("Dedalock with loading work of manager4");
 		}
 
 	}
