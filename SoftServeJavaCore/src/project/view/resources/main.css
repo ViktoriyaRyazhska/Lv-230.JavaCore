@@ -1,0 +1,21 @@
+#leftTopLabel,
+#leftTopLabel,
+#centerTopLabel,
+#rightTopLabel,
+#leftCenterLabel,
+#centerCenterLabel,
+#rightCenterLabel,
+#leftBottomLabel,
+#centerBottomLabel,
+#rightBottomLabel{
+    -fx-text-fill: white;
+    -fx-background-color: darkorange;
+    -fx-font-weight: bold;
+    -fx-font-family: "Clear Sans", "Gill Sans", Arial, sans-serif;
+    -fx-font-size: 30px;
+    -fx-effect: dropshadow(three-pass-box, darkred, 10, 0, 0, 0);
+}
+
+#userSteps {
+    -fx-font-family: "Clear Sans", "Gill Sans", Arial, sans-serif;
+}

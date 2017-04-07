@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" onKeyPressed="#handleKeyPressed" prefHeight="270.0" prefWidth="230.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.control.Controller">
+    <children>
+        <GridPane prefHeight="230.0" prefWidth="230.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="20.0" minWidth="20.0" prefWidth="20.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="50.0" minWidth="50.0" prefWidth="50.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="20.0" minWidth="20.0" prefWidth="20.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="50.0" minWidth="50.0" prefWidth="50.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="20.0" minWidth="20.0" prefWidth="20.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="50.0" minWidth="50.0" prefWidth="50.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="20.0" minWidth="20.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="20.0" minHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="20.0" minHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="20.0" minHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="20.0" minHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="20.0" minHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="20.0" minHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label fx:id="leftTopLabel" prefHeight="50.0" prefWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <padding>
+                        <Insets left="15.0" />
+                    </padding>
+                </Label>
+                <Label fx:id="centerTopLabel" prefHeight="50.0" prefWidth="50.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                    <padding>
+                        <Insets left="15.0" />
+                    </padding>
+                </Label>
+                <Label fx:id="rightTopLabel" prefHeight="50.0" prefWidth="50.0" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                    <padding>
+                        <Insets left="15.0" />
+                    </padding>
+                </Label>
+                <Label fx:id="leftCenterLabel" prefHeight="50.0" prefWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                    <padding>
+                        <Insets left="15.0" />
+                    </padding>
+                </Label>
+                <Label fx:id="centerCenterLabel" prefHeight="50.0" prefWidth="50.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                    <padding>
+                        <Insets left="15.0" />
+                    </padding>
+                </Label>
+                <Label fx:id="rightCenterLabel" prefHeight="50.0" prefWidth="50.0" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                    <padding>
+                        <Insets left="15.0" />
+                    </padding>
+                </Label>
+                <Label fx:id="leftBottomLabel" prefHeight="50.0" prefWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                    <padding>
+                        <Insets left="15.0" />
+                    </padding>
+                </Label>
+                <Label fx:id="centerBottomLabel" prefHeight="50.0" prefWidth="50.0" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                    <padding>
+                        <Insets left="15.0" />
+                    </padding>
+                </Label>
+                <Label fx:id="rightBottomLabel" prefHeight="50.0" prefWidth="50.0" GridPane.columnIndex="5" GridPane.rowIndex="5">
+                    <padding>
+                        <Insets left="15.0" />
+                    </padding>
+                </Label>
+                <Button mnemonicParsing="false" onAction="#buttonPressed" prefHeight="20.0" prefWidth="50.0" text="Help" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <Label fx:id="userStepsLabel" prefHeight="20.0" prefWidth="66.0" text="Step: " GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            </children>
+        </GridPane>
+    </children>
+</AnchorPane>
