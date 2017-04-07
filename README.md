@@ -1,10 +1,4 @@
 # Lv-230.JavaCore
 
-Additional courses:
-
-- HTML&CSS
-- JavaScript Basics
-- Database & SQL Light Version
-
-link
- - my-learning.center
+Final project presentation:
+https://www.dropbox.com/s/oa85pw1zcvwx2sj/FinalPresentation.ppt?dl=0
