@@ -1,1 +1,1 @@
-ContractEmployee [Pay =1222.0, FederalTaxId=12312, Employee [employeeid=1, name=Nazar]]SalariedEmployee [Pay()=264.0, SocialSecurityNumber=123, Employee [employeeid=2, name=Oleg]]
+ContractEmployee [Pay =123.0, FederalTaxId=2312, Employee [employeeid=1, name=Nazar]]
